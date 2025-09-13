@@ -23,7 +23,7 @@ unit-test-job:
   stage: test
   script:
     - docker build -t my-backend backend/
-    - docker run --rm my-backend python manage.py test -s -v
+    - docker run --rm my-backend python manage.py test -s -v 2
 
 deploy-job:
   stage: deploy
