@@ -1,0 +1,35 @@
+
+.settings {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    margin-left: 500px;
+    width: 470px;
+    background: white;
+    -webkit-box-shadow: 7px 6px 81px -11px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 7px 6px 81px -11px rgba(66, 68, 90, 1);
+    box-shadow: 7px 6px 81px -11px rgba(66, 68, 90, 1);
+    z-index: 1;
+    padding: 20px;
+    } 
+
+.press {
+    cursor: default;
+    transition: transform 500ms ease;
+}
+
+.press:hover {
+  transform: scale(1.1);
+}
+
+.back {
+    color: #222;
+    text-decoration: none;
+    cursor: default;
+    transition: transform 500ms ease, opacity 500ms ease
+}
+
+.back:hover {
+    opacity: 0.5;
+    transform: scale(1.3);
+}

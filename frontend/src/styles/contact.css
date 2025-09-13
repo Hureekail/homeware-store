@@ -1,0 +1,51 @@
+.contact {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    background: white;
+    -webkit-box-shadow: 7px 6px 81px -11px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 7px 6px 81px -11px rgba(66, 68, 90, 1);
+    box-shadow: 7px 6px 81px -11px rgba(66, 68, 90, 1);
+    z-index: 1;
+    margin: 0;
+}
+
+.form-horizontal {
+    float: left;
+    max-width: 400px;
+    font-family: 'Lato';
+    font-weight: 400;
+  }
+
+.press {
+    cursor: default;
+    transition: transform 500ms ease;
+}
+
+.press:hover {
+  transform: scale(1.1);
+}
+
+.back {
+    color: #222;
+    text-decoration: none;
+    cursor: default;
+    transition: transform 500ms ease, opacity 500ms ease
+}
+
+.back:hover {
+    opacity: 0.5;
+    transform: scale(1.3);
+}
+
+.input-bar-contact				{
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:700px;
+    border:none;
+    border-bottom:1px solid #757575;
+  }
+.input-bar-contact:focus 		{ outline:none; }
