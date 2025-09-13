@@ -1,0 +1,30 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./static:/app/staticfiles
+    env_file:
+      - backend/.env.prod
+      
+  frontend:
+    build: ./frontend
+    volumes:
+      - react_build:/usr/share/nginx/html
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - 80:8080
+    volumes:
+      - ./nginx/nginx-setup.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./static:/var/www/static:ro
+      - ./backend/media:/var/www/media:ro
+      - react_build:/var/www/frontend
+    depends_on:
+      - backend
+      - frontend
+
+volumes:
+  react_build:

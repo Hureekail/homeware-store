@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.center {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  margin: 0;
+  z-index: 1000;
+  transform: none;
+}
+
+.alert {
+  border-radius: 15px;
+  width: fit-content;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  cursor: default;
+  box-shadow: 7px 6px 20px 0px rgba(66, 68, 90, 0.5);
+  padding: 0 20px;
+  transition: color 500ms ease, transform 500ms ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.alert:hover{
+  transform: scale(1.1);
+}
+
+.color {
+  animation: color 2s linear infinite;
+}
+
+
+.spin {
+  animation: spin 2s linear infinite;
+}
+
+
+
+.rotate {
+  animation: rotate 2s linear infinite;
+}
+
+.shine {
+  animation: shine 2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes color {
+  50% {
+   color: #2B3246;
+  }
+  100% {
+    color: #0ad406;
+  }
+}
+
+@keyframes rotate {
+ 0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(90deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(-90deg);
+  }
+}
+
+@keyframes shine {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.1);
+  }
+  40% {
+    transform: scale(1.3);
+  }
+  80% {
+    transform: scale(1);
+  }
+}
