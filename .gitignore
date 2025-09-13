@@ -14,11 +14,11 @@ backend/staticfiles/
 # Environment files
 .env
 .env.*
-!.env.prod
+.env.prod
 backend/.env
 backend/.env.*
-!backend/.env.local
-!backend/.env.prod
+backend/.env.local
+backend/.env.prod
 frontend/.env
 frontend/.env.*
 

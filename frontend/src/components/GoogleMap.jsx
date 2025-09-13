@@ -17,7 +17,7 @@ export const GoogleMap = () => {
     const [open, setOpen] = useState(false);
     
     return (
-        <APIProvider apiKey="AIzaSyB0qGEMe1pLOd0Hhj7FAb-WWhgg_wqWvTg">
+        <APIProvider apiKey={`${import.meta.env.GOOGLE_MAPS_API_KEY}`}>
             <div style={{ height: "75vh", width: "50%" }}>
                 <Map defaultZoom={9} defaultCenter={position} mapId="e2aa2390b32c03be6cb9961d">
                     <AdvancedMarker position={position} onClick={() => setOpen(true)}>
