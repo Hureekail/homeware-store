@@ -1,5 +1,5 @@
 # Stage 1: Base build stage
-FROM python:3.13-slim AS builder
+FROM python:3.13-alpine AS builder
  
 # Create the app directory
 RUN mkdir /app
@@ -9,7 +9,8 @@ WORKDIR /app
  
 # Set environment variables to optimize Python
 ENV PYTHONDONTWRITEBYTECODE=1
-ENV PYTHONUNBUFFERED=1 
+ENV PYTHONUNBUFFERED=1
+ENV PIP_NO_CACHE_DIR=1
  
 # Install dependencies first for caching benefit
 RUN pip install --upgrade pip 
