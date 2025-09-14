@@ -32,7 +32,7 @@ class ProductCategoryView(APIView):
         return Response(serializer.data)
 
 class OrderView(APIView):
-    permission_classes = [AllowAny]
+    permission_classes = [IsAuthenticated]
 
     def get(self, request):
         orders = Order.objects.filter(user=request.user)
