@@ -7,7 +7,7 @@ build-job:
   stage: build
   script:
     - docker build -t my-backend backend/
-    - docker build --progress=plain -t my-frontend frontend/
+    - docker build -t my-frontend frontend/
 
 unit-test-job:
   stage: test

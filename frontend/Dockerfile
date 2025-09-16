@@ -2,18 +2,22 @@ FROM node:18-alpine AS builder
 
 WORKDIR /app
 
-# copy deps first
-COPY package*.json ./
-RUN npm ci --omit=dev
+COPY package.json package-lock.json ./
 
-# then copy source
+RUN npm ci
+
 COPY . .
 
-# build
-RUN NODE_OPTIONS="--max-old-space-size=512" npm run build
+RUN npm run build
 
+# Use nginx to serve the built static files
 FROM nginx:alpine
+
 COPY --from=builder /app/dist /usr/share/nginx/html
+
+# Copy custom nginx config for SPA routing
 COPY nginx.conf /etc/nginx/conf.d/default.conf
+
 EXPOSE 80
+
 CMD ["nginx", "-g", "daemon off;"]
