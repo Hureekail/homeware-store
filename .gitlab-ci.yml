@@ -3,10 +3,16 @@ stages:
   - test
   - deploy
 
+variables:
+  # Tell jobs to use rootless Docker (no socket needed)
+  DOCKER_HOST: "unix:///run/user/$UID/docker.sock"
+
 build-job:
   stage: build
   script:
+    - echo "Building backend..."
     - docker build -t my-backend backend/
+    - echo "Building frontend..."
     - docker build -t my-frontend frontend/
 
 unit-test-job:
