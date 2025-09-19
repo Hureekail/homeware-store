@@ -6,7 +6,21 @@ __pycache__/
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
+media
+staticfiles
+backend/media
+backend/staticfiles/
 
+# Environment files
+.env
+.env.*
+.env.prod
+backend/.env
+backend/.env.*
+backend/.env.local
+backend/.env.prod
+frontend/.env
+frontend/.env.*
 
 # Python cache and compiled files
 *.py[cod]
@@ -171,6 +185,10 @@ service-account-*.json
 *.crt
 *.p12
 *.pfx
+recape-kvmmv-aoepl-mm.pem
+Desktop
+Desktop.pub
+README.md
 
 # Backup files
 *.bak
