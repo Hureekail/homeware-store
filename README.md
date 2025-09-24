@@ -1,4 +1,4 @@
-# Django + React E‑commerce (Recape)
+# Django + React E‑commerce
 
 A full‑stack e‑commerce example built with Django REST Framework, Djoser + JWT auth, React (Vite), Redux Toolkit, TailwindCSS, Nginx, and Docker. Includes Google OAuth, email flows, media/static handling, and CI/CD via GitLab.
 
