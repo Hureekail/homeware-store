@@ -15,10 +15,10 @@ A full‑stack e‑commerce example built with Django REST Framework, Djoser + J
 ## 🎥 Demo Preview
 
 |  Home  Products  Basket |  Registration & Login |
-|-----------------------------|--------------------------|
-| <img src="https://github.com/user-attachments/assets/2812e8d9-a530-4ac9-bdc7-494118990c84" width="900"></img> | <img src="https://github.com/user-attachments/assets/ad532909-5715-4f5b-b999-0c0a394f907c" width="900"></img> |
-| Password Reset |  Google OAuth2, Maps & Email |
-| <img src="https://github.com/user-attachments/assets/34c8619e-0065-4710-bc43-61240f1e019c" width="900"></img> | <img src="https://github.com/user-attachments/assets/0243a336-733c-4de7-8e94-14853cdb176b" width="900"></img> |
+|--------------------------|------------------------|
+| <video src="https://github.com/username/repo/assets/2812e8d9-a530-4ac9-bdc7-494118990c84" controls width="900"></video> | <video src="https://github.com/username/repo/assets/ad532909-5715-4f5b-b999-0c0a394f907c" controls width="900"></video> |
+| Password Reset | Google OAuth2, Maps & Email |
+| <video src="https://github.com/username/repo/assets/34c8619e-0065-4710-bc43-61240f1e019c" controls width="900"></video> | <video src="https://github.com/username/repo/assets/0243a336-733c-4de7-8e94-14853cdb176b" controls width="900"></video> |
 
 ## Project Structure
 
